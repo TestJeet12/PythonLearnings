@@ -64,4 +64,33 @@
 #there are 3 stages , first initialize the local repository , then add to staging and then commit and then
 #push to github
 #staging command- git add *, * for adding all the things , or we can specify any particular file as well
-#now co
+#now confirm the files by command git status
+#now commit- git commit -m(for message) "first commit"
+#now first mention the repository details- git remote add origin <server>(server link we can get from the
+# github repository) ex-git remote add origin https://github.com/TestJeet12/PythonLearnings.git
+#now push to github- git push origin master(at first we will have only master branch)
+#in case of any certificate issue execute this command-git config --global http.sslbackend schannel
+#in general practice we cannot commit/push in main branch we have to create clone of the master branch
+#and then work on it and then work on it then merge to master branch
+#create a new branch-git checkout -b <branchname>
+#to check the branches- git branch
+#to switch to any branch-git checkout <branchname>
+
+#now first time if we need the project from git then we need to clone it-
+#Create a working copy of a local repository:
+#git clone /path/to/repository
+#For a remote server, use:
+#git clone username@host:/path/to/repository
+#ex-git clone https://github.com/TestJeet12/PythonLearnings.git
+#now next time we can pull the latest changes-
+#git pull
+#Update from the remote repository	Fetch and merge changes on the remote server to your working directory:	git pull
+#to merge changes of any branch to master-
+#To merge a different branch into your active branch:
+#git merge <branchname>
+#merge conflict- occurs if someone is working on master branch and made some changes but didnt push
+#another person working on same project and made some changes in another branch but on same file and pushed
+#now while merging both there will be conflict that time we have to resolve personally and then make the
+#same changes to file and then merge again.
+
+
